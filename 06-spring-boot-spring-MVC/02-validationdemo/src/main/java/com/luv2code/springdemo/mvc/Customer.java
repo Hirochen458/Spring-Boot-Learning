@@ -3,7 +3,7 @@ package com.luv2code.springdemo.mvc;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
-public class Custmoer {
+public class Customer {
 
     private String firstName;
 
