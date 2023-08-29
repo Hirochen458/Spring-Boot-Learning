@@ -1,5 +1,6 @@
 package com.luv2code.springdemo.mvc;
 
+import com.luv2code.springdemo.mvc.validation.CourseCode;
 import jakarta.validation.constraints.*;
 
 public class Customer {
@@ -20,6 +21,17 @@ public class Customer {
 
     public String getPostalCode() {
         return postalCode;
+    }
+
+    @CourseCode
+    public String courseCode;
+
+    public String getCourseCode() {
+        return courseCode;
+    }
+
+    public void setCourseCode(String courseCode) {
+        this.courseCode = courseCode;
     }
 
     public void setPostalCode(String postalCode) {

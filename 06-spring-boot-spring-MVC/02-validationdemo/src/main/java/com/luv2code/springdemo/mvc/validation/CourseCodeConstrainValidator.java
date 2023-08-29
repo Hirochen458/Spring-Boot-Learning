@@ -10,7 +10,7 @@ public class CourseCodeConstrainValidator implements ConstraintValidator<CourseC
 
     @Override
     public void initialize(CourseCode theCourseCode) {
-       coursePrefix = theCourseCode.value();
+       coursePrefix = theCourseCode.Value();
     }
 
     @Override
