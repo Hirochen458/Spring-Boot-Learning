@@ -23,7 +23,8 @@ public class Customer {
         return postalCode;
     }
 
-    @CourseCode
+    //@NotNull(message="is required")
+    @CourseCode(value = "TOPS", message = "must start with TOPS")
     public String courseCode;
 
     public String getCourseCode() {

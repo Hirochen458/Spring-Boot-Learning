@@ -14,7 +14,7 @@ import java.lang.annotation.Target;
 public @interface CourseCode {
 
     //define default course code
-    public String Value() default "LUV";
+    public String value() default "LUV";
 
     //define default error message
     public String message() default "must start with LUV";
@@ -24,6 +24,8 @@ public @interface CourseCode {
 
     //define default payloads
     public Class<? extends Payload>[] payload() default {};
+
+    //String value();
 
     //String value();
 }
